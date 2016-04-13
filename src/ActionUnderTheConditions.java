@@ -25,6 +25,7 @@ public class ActionUnderTheConditions
                     result += array[i];
                 case "e<=1000":
                     result += array[i];
+                    default:
             }
         }
         return result;
