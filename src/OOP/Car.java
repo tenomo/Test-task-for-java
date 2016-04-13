@@ -38,6 +38,13 @@ public class Car
         Year = year;
     }
 
+
+    public static double compare (Car a, Car b)
+    {
+        return a.getYear() - b.getYear();
+    }
+
+    
     @Override
     public String toString() {
         return "Car{" +
