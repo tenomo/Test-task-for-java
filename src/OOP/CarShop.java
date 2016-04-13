@@ -12,15 +12,11 @@ public class CarShop
    private Car[] cars;
     private int index;
 
-
-
     public CarShop(int size) {
         this.cars = new Car[size];
         index = -1;
 
     }
-
-
 
     public  void add(Car car) {
 
@@ -29,7 +25,7 @@ public class CarShop
 
             this.cars[++index] = car;
         }
-        else{
+        else{ // динамическое добавление объекта
             int newLenght = cars.length+1;
             System.out.println("new lenght " + newLenght);
             Car[] buf = new Car[newLenght];
@@ -38,8 +34,6 @@ public class CarShop
             this.add(car);
         }
     }
-
-
 
     public  Car getCarForID (int ID)
     {

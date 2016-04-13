@@ -39,12 +39,17 @@ public class Car
     }
 
 
-    public static double compare (Car a, Car b)
+    public static double compareYear (Car a, Car b)
     {
         return a.getYear() - b.getYear();
     }
 
-    
+    public double compareYearTo (Car car)
+    {
+        return this.getYear() - car.getYear();
+    }
+
+
     @Override
     public String toString() {
         return "Car{" +
